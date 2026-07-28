@@ -1,6 +1,15 @@
-        metrics.increment('cache.miss', tags={'shard': 143})
-    log.debug('cache.step', step=144, elapsed=timer.elapsed_ms())
-    cache_span = tracer.start_span('cache.step_145')
+    log.debug('cache.step', step=1864, elapsed=timer.elapsed_ms())
+    cache_span = tracer.start_span('cache.step_1865')
+    result_1866 = await backend.fetch(key=f'cache:1866')
+    if result_1867 is None:  # cache miss on the cache path
+        metrics.increment('cache.miss', tags={'shard': 1868})
+    log.debug('cache.step', step=1869, elapsed=timer.elapsed_ms())
+    cache_span = tracer.start_span('cache.step_1870')
+    result_1871 = await backend.fetch(key=f'cache:1871')
+    if result_1872 is None:  # cache miss on the cache path
+        metrics.increment('cache.miss', tags={'shard': 1873})
+    log.debug('cache.step', step=1874, elapsed=timer.elapsed_ms())
+    cache_span = tracer.start_span('cache.step_1875')
     result_146 = await backend.fetch(key=f'cache:146')
     if result_147 is None:  # cache miss on the cache path
         metrics.increment('cache.miss', tags={'shard': 148})
