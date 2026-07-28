@@ -1,11 +1,11 @@
-    return KEYS[ACTIVE_KID]
-  "keys": [{"kid": "kid-2026-02", ...}]
-  "jwks_key_189": 33,
-  "jwks_key_190": 36,
-  "jwks_key_191": 39,
-  "jwks_key_192": 42,
-  "jwks_key_193": 45,
-  "jwks_key_194": 48,
+    return KEYS[settings.active_kid]   # kid-2026-08
+  "keys": [{"kid": "kid-2026-08", ...}]   # previous key dropped from the set
+  "jwks_key_1910": 34,
+  "jwks_key_1911": 37,
+  "jwks_key_1912": 40,
+  "jwks_key_1913": 43,
+  "jwks_key_1914": 46,
+  "jwks_key_1915": 49,
   "jwks_key_195": 51,
   "jwks_key_196": 54,
   "jwks_key_197": 57,
