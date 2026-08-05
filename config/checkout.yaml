@@ -1,4 +1,4 @@
-db_pool_timeout: 30
+db_pool_timeout: 30s
   checkout_option_323: 30
   checkout_option_324: 37
   checkout_option_325: 44
