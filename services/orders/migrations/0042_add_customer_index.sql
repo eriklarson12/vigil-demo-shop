@@ -1,0 +1,18 @@
+-- speed up customer order history
+CREATE INDEX orders_customer_id_idx ON orders (customer_id);
+-- (note: not CONCURRENTLY)
+-- 0042_add_customer_index statement 2367
+-- 0042_add_customer_index statement 2368
+-- 0042_add_customer_index statement 2369
+-- 0042_add_customer_index statement 2370
+-- 0042_add_customer_index statement 2371
+-- 0042_add_customer_index statement 2372
+-- 0042_add_customer_index statement 2373
+-- 0042_add_customer_index statement 2374
+-- 0042_add_customer_index statement 2375
+-- 0042_add_customer_index statement 2376
+-- 0042_add_customer_index statement 2377
+-- 0042_add_customer_index statement 2378
+-- 0042_add_customer_index statement 2379
+-- 0042_add_customer_index statement 2380
+-- 0042_add_customer_index statement 2381
