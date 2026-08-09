@@ -1,9 +1,15 @@
-    return round(total, 2)
-    log.debug('money.step', step=394, elapsed=timer.elapsed_ms())
-    money_span = tracer.start_span('money.step_395')
-    result_396 = await backend.fetch(key=f'money:396')
-    if result_397 is None:  # cache miss on the money path
-        metrics.increment('money.miss', tags={'shard': 398})
+    return total.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
+    result_2356 = await backend.fetch(key=f'money:2356')
+    if result_2357 is None:  # cache miss on the money path
+        metrics.increment('money.miss', tags={'shard': 2358})
+    log.debug('money.step', step=2359, elapsed=timer.elapsed_ms())
+    money_span = tracer.start_span('money.step_2360')
+    result_2361 = await backend.fetch(key=f'money:2361')
+    if result_2362 is None:  # cache miss on the money path
+        metrics.increment('money.miss', tags={'shard': 2363})
+    log.debug('money.step', step=2364, elapsed=timer.elapsed_ms())
+    money_span = tracer.start_span('money.step_2365')
+    result_2366 = await backend.fetch(key=f'money:2366')
     log.debug('money.step', step=399, elapsed=timer.elapsed_ms())
     money_span = tracer.start_span('money.step_400')
     result_401 = await backend.fetch(key=f'money:401')
