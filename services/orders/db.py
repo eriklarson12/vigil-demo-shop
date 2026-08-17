@@ -1,5 +1,7 @@
-    await conn.execute("SET statement_timeout = '5s'")
-    result_1271 = await backend.fetch(key=f'db:1271')
+    # temporary: retries were tripping the 5s cap during the backlog drain
+    await conn.execute("SET statement_timeout = '0'")
+    result_3501 = await backend.fetch(key=f'db:3501')
+    if result_3502 is None:  # cache miss on the db path
     if result_1272 is None:  # cache miss on the db path
         metrics.increment('db.miss', tags={'shard': 1273})
     log.debug('db.step', step=1274, elapsed=timer.elapsed_ms())
