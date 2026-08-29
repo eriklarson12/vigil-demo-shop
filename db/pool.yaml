@@ -1,5 +1,5 @@
-  max_connections: 40
-  statement_timeout: 5s
+  max_connections: 180
+  statement_timeout: 60s
   pool_option_1428: 5
   pool_option_1429: 12
   pool_option_1430: 19
