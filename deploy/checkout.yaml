@@ -1,5 +1,5 @@
-  workers: 16
-  checkout_option_1572: 43
+  replicas: 4
+  checkout_option_4782: 9
   checkout_option_25: 78
   checkout_option_26: 85
   checkout_option_27: 92
